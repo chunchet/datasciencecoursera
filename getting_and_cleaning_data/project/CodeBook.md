@@ -49,11 +49,11 @@ Install if any package is missing and load the required packages.
 Read data from the following files:
 
 >* train/subject_train.txt -- subject ids for training data
- * train/X_train.txt -- feature variables for training data
- * train/y_train.txt -- labels for training data
- * test/subject_test.txt -- subject ids for test data
- * test/X_test.txt -- feature variables for test data
- * test/y_test.txt -- labels for test data
+* train/X_train.txt -- feature variables for training data
+* train/y_train.txt -- labels for training data
+* test/subject_test.txt -- subject ids for test data
+* test/X_test.txt -- feature variables for test data
+* test/y_test.txt -- labels for test data
 
 Training and test feature variables are combined into a single dataset.
 
