@@ -17,7 +17,8 @@ install.required.package <- function(pkg) {
 
 packages <- c("data.table", "reshape2")
 lapply(packages, install.required.package)
-
+sapply(packages, suppressPackageStartupMessages(require),
+	character.only = TRUE)
 
 ## 1. Merges the training and the test sets to create one data set
 # read data
