@@ -21,7 +21,7 @@ To create a R script called run_analysis.R that does the following:
    with the average of each variable for each activity and each subject.
 
 ## How does it work?
-1. Donwload ```UCI HAR dataset``` from [https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip] [https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip]
+1. Donwload ```UCI HAR dataset``` from [https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip] (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 2. Unzip the dataset in the same working directory.
 3. run the R script, ```run_analysis.R```, as follows:
    >>source("run_analysis.R")
