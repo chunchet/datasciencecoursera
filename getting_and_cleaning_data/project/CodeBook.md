@@ -60,11 +60,32 @@ training and test feature variables are combined into a single dataset.
 ### 2. Extract only the measurement on the mean and standard deviation
        for each measurement.
 Feature labels are read from file:
-features.txt
+features.txt.
 Search for matches in the labels containing **mean** and **std**,
-index are
-    Extracts only the measurements on the mean and standard deviation for each measurement. 
-    Uses descriptive activity names to name the activities in the data set
-    Appropriately labels the data set with descriptive variable names. 
+the dataset is updated with only mean and standard deviation variables.
 
-    From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+### 3. Uses descriptive activity names to name the activities in the 
+       data set
+Activity labels are read from file:
+activity_labels.txt
+to name the labels with activity names: 
+* WALKING
+* WALKING_UPSTAIRS
+* WALKING_DOWNSTAIRS
+* SITTING
+* STANDING
+* LAYING
+       
+### 4. Appropriately labels the data set with descriptive variable names. 
+The dataset is combined with labels and subjects in the format:
+> label, labelName, subject, feature variables (measurements).
+The Dataset columns are named appropriately using feature labels from step 2.
+
+### 5. From the data set in step 4, creates a second, independent tidy 
+       data set with the average of each variable for each activity and 
+       each subject.
+The dataset is melted with ```label```, ```labelName``` and ```subject```
+against the feature variables.
+Tidy dataset is created by casting the melted data to obtain the average of 
+each variable for each activity and each subject.
+The final data frame is saved as ```tidy_data.txt```.
