@@ -48,12 +48,12 @@ Install if any package is missing and load the required packages.
 ### 1. Merges the training and the test sets to create one data set.
 Read data from the following files:
 
-> train/subject_train.txt -- subject ids for training data
-  train/X_train.txt -- feature variables for training data
-  train/y_train.txt -- labels for training data
-  test/subject_test.txt -- subject ids for test data
-  test/X_test.txt -- feature variables for test data
-  test/y_test.txt -- labels for test data
+>* train/subject_train.txt -- subject ids for training data
+ * train/X_train.txt -- feature variables for training data
+ * train/y_train.txt -- labels for training data
+ * test/subject_test.txt -- subject ids for test data
+ * test/X_test.txt -- feature variables for test data
+ * test/y_test.txt -- labels for test data
 
 Training and test feature variables are combined into a single dataset.
 
@@ -88,4 +88,5 @@ The dataset is melted with ```label```, ```labelName``` and ```subject```
 against the feature variables.  
 Tidy dataset is created by casting the melted data to obtain the average of 
 each variable for each activity and each subject.  
-The final data frame is saved as ```tidy_data.txt```.
+The final data frame is saved as 
+> tidy_data.txt.
